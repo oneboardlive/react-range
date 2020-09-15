@@ -210,7 +210,7 @@ class Range extends React.Component<IProps> {
     // in case there is a single thumb, we want to support
     // moving the thumb to a place where the track is clicked
     if (e.button !== 0 || this.props.values.length > 1) return;
-    this.thumbRefs[0].current?.focus();
+    // this.thumbRefs[0].current?.focus();
     e.persist();
     e.preventDefault();
     this.addMouseEvents(e.nativeEvent);
